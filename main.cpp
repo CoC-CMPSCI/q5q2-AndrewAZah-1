@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int N, M;
+    int N, M, result = 1;
 
     cout << "Enter your base number: ";
     cin >> N;
@@ -14,6 +14,13 @@ int main()
 
     // TODO
 
+    for (int i = 0; i < M; i++)
+    {
+        cout << result << ", ";
+        result *= N;
+    }
+
+    cout << result;
     cout << endl;
 
     return 0;
